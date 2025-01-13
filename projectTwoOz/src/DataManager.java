@@ -6,8 +6,8 @@ public class DataManager {
 
         ArrayList<Property> arr = new ArrayList<>();
 
-        arr.add(new Plot("Tel Aviv, Namir 10", 500, 7000000, Plot.TYPE.URBAN));
-        arr.add(new Plot("Ashkelon, Sderot Ben Gurion 3", 800, 12000000, Plot.TYPE.INDUSTRIAL));
+        arr.add(new Plot("Tel Aviv, Namir 10", 500, 7000000, Type.URBAN));
+        arr.add(new Plot("Ashkelon, Sderot Ben Gurion 3", 800, 12000000, Type.INDUSTRIAL));
 
         arr.add(new Apartment("Tel Aviv, Frishman 12", 120, 3000000, -1, 4));
         arr.add(new Apartment("Haifa, Herzl 4", 80, 1500000, 1, 3));

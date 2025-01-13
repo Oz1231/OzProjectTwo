@@ -1,33 +1,29 @@
 public class Plot extends Property{
 
-    public static enum TYPE {
-        URBAN,
-        AGRICULTURAL,
-        INDUSTRIAL
-    }
 
-    TYPE type;
 
-    public Plot(String address, double area, double price, TYPE type) {
+    Type type;
+
+    public Plot(String address, double area, double price, Type type) {
         super(address, area, price);
         this.type = type;
     }
 
-    public TYPE getType() {
+    public Type getType() {
         return type;
     }
 
-    public void setType(TYPE type) {
+    public void setType(Type type) {
         this.type = type;
     }
 
     @Override
     public void taxIt() {
-        if (type == TYPE.URBAN)
+        if (type == Type.URBAN)
         {
             System.out.println("10%");
         }
-       else if (type == TYPE.AGRICULTURAL)
+       else if (type == Type.AGRICULTURAL)
         {
             System.out.println("2%");
         }
